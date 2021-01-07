@@ -6,7 +6,7 @@ export print_sudoku, lines, fill
 
 Print a sudoku grid with a nice format
 """
-function print_sudoku(grid::Matrix)
+function print_sudoku(grid::Matrix) ## does this function used in the script? if not maybe remove it to make it look tidy :)
     for string in lines(grid)
         println(string)
     end
@@ -18,7 +18,7 @@ end
 
 Draw the edges of a Sudoku grid
 """
-function lines(grid::Matrix)
+function lines(grid::Matrix) ## does this function used in the script? if not maybe remove it to make it look tidy :)
     horiz_piece = "---------+"
     sep_line = "+" * (horiz_piece)^3
 
@@ -41,7 +41,7 @@ end
 Fills the sudoku grid, using " - " where zero is found,
 takes as input a row vector 
 """
-function fill(r::Vector)
+function fill(r::Vector) ## does this function used in the script? if not maybe remove it to make it look tidy :)
     result = ""
     for k=1:3
         a = r[k]

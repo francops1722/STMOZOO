@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.12
+# v0.12.17
 
 using Markdown
 using InteractiveUtils
@@ -12,15 +12,19 @@ md"""
 
 # Solving a Sudoku using Local Search
 
-Sudoku is a world wide popular japanesse puzzle. Although very challenging, Sudoku rules are quite simple: Place digits between 1-9 on a 9×9 grid such that
+Sudoku is a world wide popular Japanese puzzle. Although very challenging, Sudoku rules are quite simple: placing digits between 1-9 on a 9×9 grid such that
 each digit appears once in each row, column and each 3x3 sub-grid.
 
-Local search methods, opposed to brute force algorithm, move from state to state in the space of states by applying local changes, trying to get closer to the solution each time.
+Local search methods, opposed to brute force algorithm, move from state to state in the space of states by applying local changes, trying to get closer to the solution for each time.
 
 A naive local search algorithm starts from a complete random assignment, then attempts to find a better state by making an incremental change until it finds the solution or gets stuck in a local minimum.
 
 #### Get a Sudoku puzzle
 """
+
+# ╔═╡ 9ca452c4-5105-11eb-15b4-7b0e6caa8a7d
+# Would it better to put just one example to help to follow up?
+
 
 # ╔═╡ dec03be0-3d6a-11eb-003a-197ac59933dc
 md"""
@@ -242,6 +246,7 @@ This approach is far less effecient than the previous. It will need at least 100
 # ╔═╡ Cell order:
 # ╠═44194c10-3d62-11eb-2089-2b2813796028
 # ╟─9db0d300-3d63-11eb-31bb-b3a8acc6a1c9
+# ╠═9ca452c4-5105-11eb-15b4-7b0e6caa8a7d
 # ╟─dec03be0-3d6a-11eb-003a-197ac59933dc
 # ╠═dd7c43d0-3d62-11eb-2f9c-69eb6819d094
 # ╠═479a4660-3d6b-11eb-2453-399baa5b059f
@@ -274,7 +279,7 @@ This approach is far less effecient than the previous. It will need at least 100
 # ╠═3e56d182-3dee-11eb-07a9-d7baa09ebc45
 # ╟─506e5190-3dee-11eb-184e-4d36e8eb1c51
 # ╟─61de9850-3df2-11eb-1452-c79af84acab7
-# ╠═a932ed90-3dee-11eb-3c98-71279cf5e3bb
+# ╟─a932ed90-3dee-11eb-3c98-71279cf5e3bb
 # ╠═5c5853f0-3df0-11eb-1a78-274cceaf7711
 # ╠═633fe7f0-3df0-11eb-3f20-1d38fa05b17c
-# ╠═1fe59f80-3dfb-11eb-08f2-b1e4a62e679f
+# ╟─1fe59f80-3dfb-11eb-08f2-b1e4a62e679f
